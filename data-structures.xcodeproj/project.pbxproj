@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B63ADE8928007E7600F84AB4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B63ADE8828007E7600F84AB4 /* main.cpp */; };
+		B63ADE94280086E200F84AB4 /* binaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B63ADE92280086E200F84AB4 /* binaryTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		B63ADE8528007E7600F84AB4 /* data-structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "data-structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63ADE8828007E7600F84AB4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B63ADE92280086E200F84AB4 /* binaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binaryTree.cpp; sourceTree = "<group>"; };
+		B63ADE93280086E200F84AB4 /* binaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binaryTree.hpp; sourceTree = "<group>"; };
+		B63ADE952800877F00F84AB4 /* common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,20 @@
 		B63ADE8728007E7600F84AB4 /* data-structures */ = {
 			isa = PBXGroup;
 			children = (
+				B63ADE91280086C300F84AB4 /* tree */,
 				B63ADE8828007E7600F84AB4 /* main.cpp */,
+				B63ADE952800877F00F84AB4 /* common.hpp */,
 			);
 			path = "data-structures";
+			sourceTree = "<group>";
+		};
+		B63ADE91280086C300F84AB4 /* tree */ = {
+			isa = PBXGroup;
+			children = (
+				B63ADE92280086E200F84AB4 /* binaryTree.cpp */,
+				B63ADE93280086E200F84AB4 /* binaryTree.hpp */,
+			);
+			path = tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63ADE94280086E200F84AB4 /* binaryTree.cpp in Sources */,
 				B63ADE8928007E7600F84AB4 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

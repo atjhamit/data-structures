@@ -5,10 +5,23 @@
 //  Created by Amit Jha on 08/04/22.
 //
 
-#include <iostream>
+#include "tree/binaryTree.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#define N 16
+int main()
+{
+//    BinaryTree obj;
+//    std::vector<int> elements;
+//    obj.insert();
+//    obj.preorder();
+//    obj.inorder();
+//    obj.postorder();
+//    obj.levelorder();
+    
+    BinarySearchTree bst;
+    bst.insert(elements);
+    bst.preorder();
+    bst.inorder();
+    bst.postorder();
+    bst.levelorder();
 }
