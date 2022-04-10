@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "BinaryTree::insert(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;):binaryTree.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "elements[i]">
+            </PersistentString>
+            <PersistentString
+               value = "root">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BinaryTree::preorder():binaryTree.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "root-&gt;data">
+            </PersistentString>
+            <PersistentString
+               value = "root-&gt;right-&gt;right-&gt;right-&gt;data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
