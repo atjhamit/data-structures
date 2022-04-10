@@ -6,6 +6,7 @@
 //
 
 #include "tree/binaryTree.hpp"
+#include "tree/binarySearchTree.hpp"
 
 #define N 16
 int main()
@@ -18,10 +19,23 @@ int main()
 //    obj.postorder();
 //    obj.levelorder();
     
+    std::vector<int> elements;
+    for(int i = 1; i < N; i++)
+    {
+        elements.push_back(i);
+    }
+    
     BinarySearchTree bst;
     bst.insert(elements);
-    bst.preorder();
     bst.inorder();
-    bst.postorder();
-    bst.levelorder();
+    int ele1 = 5;
+    int ele2 = 99;
+    if(bst.search(ele1))
+        LOG("found -> " << ele1);
+    else
+        LOG("missing -> " << ele1);
+    if(bst.search(ele2))
+        LOG("found -> " << ele2);
+    else
+        LOG("missing -> " << ele2);
 }

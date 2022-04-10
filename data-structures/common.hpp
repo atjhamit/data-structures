@@ -15,3 +15,9 @@
 
 #define LOG(x) std::cout << x << "\n"
 #define LOG_T(x) std::cout << x << "\t"
+
+typedef struct Leaf
+{
+    Leaf *left, *right;
+    int data;
+}Leaf;

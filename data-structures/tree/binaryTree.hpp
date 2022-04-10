@@ -9,12 +9,6 @@
 
 #include "../common.hpp"
 
-typedef struct Leaf
-{
-    Leaf *left, *right;
-    int data;
-}Leaf;
-
 class BinaryTree
 {
 private:
