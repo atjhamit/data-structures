@@ -147,3 +147,22 @@ void BinaryTree::levelorder()
     }
     LOG("");
 }
+
+#define N 16
+static int pseudoMain()
+{
+    BinaryTree obj;
+    std::vector<int> elements;
+
+    for(int i = 1; i < N; i++)
+    {
+        elements.push_back(i);
+    }
+
+    obj.insert();
+    obj.preorder();
+    obj.inorder();
+    obj.postorder();
+    obj.levelorder();
+    return 0;
+}
