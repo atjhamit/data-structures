@@ -13,11 +13,16 @@ class BinaryTree
 {
 private:
     Leaf* root;
+    
     Leaf* create(int);
+    int height(Leaf* root);
+    int count(Leaf* root);
+
 public:
     void insert();
     void inorder();
     void preorder();
     void postorder();
     void levelorder();
+    void heightAndCount();
 };

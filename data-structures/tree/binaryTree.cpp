@@ -148,21 +148,43 @@ void BinaryTree::levelorder()
     LOG("");
 }
 
-#define N 16
-static int pseudoMain()
+int BinaryTree::height(Leaf* root)
 {
-    BinaryTree obj;
-    std::vector<int> elements;
-
-    for(int i = 1; i < N; i++)
-    {
-        elements.push_back(i);
-    }
-
-    obj.insert();
-    obj.preorder();
-    obj.inorder();
-    obj.postorder();
-    obj.levelorder();
-    return 0;
+    if(!root) return 0;
+    int x = height(root->left);
+    int y = height(root->right);
+    if(x > y)
+        return x + 1;
+    return y + 1;
 }
+
+int BinaryTree::count(Leaf* root)
+{
+    if(!root) return 0;
+    return count(root->left) + count(root->right) + 1;
+}
+
+void BinaryTree::heightAndCount()
+{
+    LOG("Height : " << height(root));
+    LOG("Count : " << count(root));
+}
+
+//#define N 16
+//static int pseudoMain()
+//{
+//    BinaryTree obj;
+//    std::vector<int> elements;
+//
+//    for(int i = 1; i < N; i++)
+//    {
+//        elements.push_back(i);
+//    }
+//
+//    obj.insert();
+//    obj.preorder();
+//    obj.inorder();
+//    obj.postorder();
+//    obj.levelorder();
+//    return 0;
+//}

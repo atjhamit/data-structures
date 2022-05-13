@@ -11,6 +11,17 @@
 #define N 16
 int main()
 {
+    BinaryTree obj;
+    
+    obj.insert();
+    obj.preorder();
+    obj.postorder();
+    obj.inorder();
+    obj.levelorder();
+    
+    obj.heightAndCount();
+    
     
     return 0;
 }
+ 

@@ -168,28 +168,30 @@ void BinarySearchTree::levelorder()
     LOG("");
 }
 
-#define N 16
-static int pseudoMain()
-{
-    std::vector<int> elements;
-    for(int i = 1; i < N; i++)
-    {
-        elements.push_back(i);
-    }
-    
-    BinarySearchTree bst;
-    bst.insert(elements);
-    bst.inorder();
-    int ele1 = 5;
-    int ele2 = 99;
-    if(bst.search(ele1))
-        LOG("found -> " << ele1);
-    else
-        LOG("missing -> " << ele1);
-    if(bst.search(ele2))
-        LOG("found -> " << ele2);
-    else
-        LOG("missing -> " << ele2);
 
-    return 0;
-}
+
+//#define N 16
+//static int pseudoMain()
+//{
+//    std::vector<int> elements;
+//    for(int i = 1; i < N; i++)
+//    {
+//        elements.push_back(i);
+//    }
+//
+//    BinarySearchTree bst;
+//    bst.insert(elements);
+//    bst.inorder();
+//    int ele1 = 5;
+//    int ele2 = 99;
+//    if(bst.search(ele1))
+//        LOG("found -> " << ele1);
+//    else
+//        LOG("missing -> " << ele1);
+//    if(bst.search(ele2))
+//        LOG("found -> " << ele2);
+//    else
+//        LOG("missing -> " << ele2);
+//
+//    return 0;
+//}
