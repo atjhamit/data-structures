@@ -37,6 +37,7 @@ int main()
         LOG(array[i] << "\t");
     }
 
+    delete[] array;
     LOG_L("");
     return 0;
 }
