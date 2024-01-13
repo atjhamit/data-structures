@@ -18,8 +18,8 @@ class Rectangle
 
     Rectangle()
     {
-        length = 0;
-        breadth = 0;
+        this->length = 0;
+        this->breadth = 0;
     }
 
     int getLength() // getter or accessor
