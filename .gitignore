@@ -1,3 +1,7 @@
+#visual code
+*.dSYM
+.vscode
+
 # Prerequisites
 *.d
 

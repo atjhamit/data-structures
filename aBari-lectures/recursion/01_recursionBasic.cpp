@@ -7,14 +7,15 @@ void func(int n)
 {
     if(n > 0)
     {
-        LOG(n);
         func(n - 1);
+        LOG(n);
     }
 }
 
-int main1()
+int main()
 {
     int x = 3;
+    LOG_L("xxxxxxxxxxxxxxxx");
     func(x);
     LOG_L("");
 
