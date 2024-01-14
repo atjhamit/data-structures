@@ -14,7 +14,7 @@ void changeValue(int p, int &q)
     
 }
 
-int main1()
+int main()
 {
     int a = 3;
     int b = 4;

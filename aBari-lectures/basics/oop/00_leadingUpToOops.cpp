@@ -24,7 +24,7 @@ void changeLength(Rectangle* obj, int newLength)
     obj->length = newLength;
 }
 
-int main1()
+int main()
 {
     Rectangle* rectObj = new Rectangle;
     initialize(rectObj, 5, 6);

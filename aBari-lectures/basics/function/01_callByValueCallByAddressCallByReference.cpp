@@ -32,7 +32,7 @@ void callByReference(int &val1, int &val2)
     LOG_L("==Call By Reference==");
 }
 
-int main1()
+int main()
 {
     int value1 = 3;
     int value2 = 4;

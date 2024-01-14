@@ -24,7 +24,7 @@ void print(const char* sequence, ...)
     va_end(argList);
 }
 
-int main1()
+int main()
 {
     int num_args = 3;
     int a   = 5;

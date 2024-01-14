@@ -3,7 +3,7 @@
 
 #define LOG_L(x) std::cout << x << "\n"
 
-int main1()
+int main()
 {
     int numArgs = 0;
     LOG_L("enter the number of arguments:");

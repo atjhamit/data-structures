@@ -19,7 +19,7 @@ int sum(int num_args, ...)
     return sum;
 }
 
-int main1()
+int main()
 {
     int a = 5;
     int b = 6;

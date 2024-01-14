@@ -3,7 +3,7 @@
 #define LOG(x) std::cout << x 
 #define LOG_L(x) std::cout << x << std::endl
 
-int main1()
+int main()
 {
     int size = 0;
     LOG_L("Enter the size of the array: ");
