@@ -7,7 +7,7 @@ void func(int n)
 {
     if(n > 0)
     {
-        LOG(n);
+        LOG_L(n);
         func(n - 1);
         func(n - 1);
     }
