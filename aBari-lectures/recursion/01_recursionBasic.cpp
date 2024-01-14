@@ -15,7 +15,6 @@ void func(int n)
 int main()
 {
     int x = 3;
-    LOG_L("xxxxxxxxxxxxxxxx");
     func(x);
     LOG_L("");
 
