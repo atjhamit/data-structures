@@ -11,7 +11,7 @@ struct rectangle
     char a;
 };
 
-int main()
+int main1()
 {
     struct rectangle rect_obj;
     printf("Current area of rectangle = %f", rect_obj.area);

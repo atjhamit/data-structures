@@ -43,7 +43,7 @@ class Rectangle
     // }
 };
 
-int main()
+int main1()
 {
     // Rectangle* rectObj = new Rectangle(5,6);
     // rectObj->area();

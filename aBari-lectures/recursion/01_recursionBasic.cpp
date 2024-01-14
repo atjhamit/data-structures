@@ -12,7 +12,7 @@ void func(int n)
     }
 }
 
-int main()
+int main1()
 {
     int x = 3;
     func(x);

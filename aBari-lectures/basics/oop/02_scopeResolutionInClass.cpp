@@ -52,7 +52,7 @@ void Rectangle::changeLength(int newLength) // setter or mutator
 
 Rectangle::~Rectangle()  {}
 
-int main()
+int main1()
 {
     // Rectangle* rectObj = new Rectangle(5,6);
     // rectObj->area();

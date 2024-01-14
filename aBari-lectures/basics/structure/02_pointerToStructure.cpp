@@ -9,7 +9,7 @@ struct Rectangle
     int ar;
 };
 
-int main()
+int main1()
 {
     // struct keyword is no longer needed in c++ during structure variable declaration
     // struct Rectangle *ptr = (struct Rectangle*) malloc(sizeof(struct Rectangle));

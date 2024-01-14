@@ -12,7 +12,7 @@ struct Struc
     char e;
 };
 
-int main()
+int main1()
 {
     struct Struc s;
     LOG_L(sizeof(s));

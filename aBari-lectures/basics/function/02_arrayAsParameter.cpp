@@ -23,7 +23,7 @@ int* fetchArray(int sizeArray)
     return arr;
 }
 
-int main()
+int main1()
 {
     int sizeArray = 3;
     int arr[] = {1, 2, 3};

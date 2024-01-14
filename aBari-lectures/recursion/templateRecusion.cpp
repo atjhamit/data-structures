@@ -8,7 +8,7 @@ void func()
     ;
 }
 
-int main()
+int main1()
 {
     ;
 

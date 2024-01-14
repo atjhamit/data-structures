@@ -46,7 +46,7 @@ T MathOperations<T, T2>::sub()
     return diff;
 }
 
-int main()
+int main1()
 {
     MathOperations<int, float> intObj(5,6);
     MathOperations<float, int> floatObj(5.5f, 6.6f);
