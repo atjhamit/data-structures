@@ -1,16 +1,16 @@
 #include <iostream>
 
-#define LOG(x) std::cout << x 
-#define LOG_L(x) std::cout << x << std::endl
+#define LOG_T(x) std::cout << x 
+#define LOG(x) std::cout << x << std::endl
 
 void printArray(int* array, int sizeArray)
 {
     for(int i = 0; i < sizeArray; i++)
     {
-        LOG(array[i] << "\t");
+        LOG_T(array[i] << "\t");
     }
 
-    LOG_L("");
+    LOG("");
 }
 
 int* fetchArray(int sizeArray)
@@ -34,10 +34,10 @@ int main()
 
     for(int i = 0; i < sizeArray; i++)
     {
-        LOG(array[i] << "\t");
+        LOG_T(array[i] << "\t");
     }
 
     delete[] array;
-    LOG_L("");
+    LOG("");
     return 0;
 }

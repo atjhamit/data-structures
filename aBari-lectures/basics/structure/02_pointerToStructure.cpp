@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 
-#define LOG_L(x) std::cout << x << "\n"
+#define LOG(x) std::cout << x << "\n"
 struct Rectangle
 {
     int len;
@@ -28,10 +28,10 @@ int main()
     ptr->ar     = ptr->len * ptr->br;
     nptr->ar    = nptr->len * nptr->br; 
 
-    LOG_L("Area of malloc rect : " << ptr->ar);
-    LOG_L("Area of new rect : " << nptr->ar);
+    LOG("Area of malloc rect : " << ptr->ar);
+    LOG("Area of new rect : " << nptr->ar);
 
-    LOG_L(sizeof(ptr));
-    LOG_L(sizeof(nptr));
+    LOG(sizeof(ptr));
+    LOG(sizeof(nptr));
     return 0;
 }

@@ -1,12 +1,12 @@
 #include <iostream>
 
-#define LOG(x) std::cout << x 
-#define LOG_L(x) std::cout << x << std::endl
+#define LOG_T(x) std::cout << x 
+#define LOG(x) std::cout << x << std::endl
 
 int main()
 {
     int size = 0;
-    LOG_L("Enter the size of the array: ");
+    LOG("Enter the size of the array: ");
     std::cin >> size;
 
     // remember that variable size arrays cannot be initialized
@@ -16,14 +16,14 @@ int main()
 
     for(i = 0; i < size; i++)
     {
-        LOG_L("Enter the value at index : " << i);
+        LOG("Enter the value at index : " << i);
         std::cin >> A[i];
     }
 
-    LOG_L("Displaying the elements in variable size array A");
+    LOG("Displaying the elements in variable size array A");
     for(int element : A)
     {
-        LOG_L(element);
+        LOG(element);
     }
 
     return 0;

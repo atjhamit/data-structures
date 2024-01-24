@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define LOG_L(x) std::cout << x << "\n"
+#define LOG(x) std::cout << x << "\n"
 
 template <class T, class T2>
 class MathOperations
@@ -51,11 +51,11 @@ int main()
     MathOperations<int, float> intObj(5,6);
     MathOperations<float, int> floatObj(5.5f, 6.6f);
 
-    LOG_L("sum = " << intObj.add());
-    LOG_L("diff = " << intObj.sub());
+    LOG("sum = " << intObj.add());
+    LOG("diff = " << intObj.sub());
 
-    LOG_L("sum = " << floatObj.add());
-    LOG_L("diff = " << floatObj.sub());
+    LOG("sum = " << floatObj.add());
+    LOG("diff = " << floatObj.sub());
 
     return 0;
 }

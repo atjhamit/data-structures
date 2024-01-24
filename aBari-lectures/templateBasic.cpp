@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x) std::cout << x 
-#define LOG_L(x) std::cout << x << std::endl
+#define LOG_T(x) std::cout << x 
+#define LOG(x) std::cout << x << std::endl
 
 int main()
 {

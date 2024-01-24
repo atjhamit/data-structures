@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x)      std::cout << x << "\t"
-#define LOG_L(x)    std::cout << x << "\n"
+#define LOG_T(x)      std::cout << x << "\t"
+#define LOG(x)    std::cout << x << "\n"
 
 // O(N)
 int iterativeFib(int n)
@@ -71,7 +71,7 @@ int recursiveFibOptimized(int n)
 int main()
 {
     int n = 0;
-    LOG_L("enter n");
+    LOG("enter n");
     std::cin >> n;
     memory = new int[n];
 
@@ -80,9 +80,9 @@ int main()
         memory[i] = -1;
     }
 
-    LOG_L("iterative result : " << iterativeFib(n));
-    LOG_L("recursive result : " << recursiveFib(n));
-    LOG_L("recursive optimized result : " << recursiveFibOptimized(n));
+    LOG("iterative result : " << iterativeFib(n));
+    LOG("recursive result : " << recursiveFib(n));
+    LOG("recursive optimized result : " << recursiveFibOptimized(n));
 
     return 0;
 }

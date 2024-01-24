@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define LOG_L(x) std::cout << x << "\n"
+#define LOG(x) std::cout << x << "\n"
 
 #pragma pack(1) // to disable padding and do packing instead
 
@@ -15,6 +15,6 @@ struct Struc
 int main()
 {
     struct Struc s;
-    LOG_L(sizeof(s));
+    LOG(sizeof(s));
     return 0;
 }

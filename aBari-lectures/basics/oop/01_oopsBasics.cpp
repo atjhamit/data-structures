@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define LOG_L(x) std:: cout << x << "\n"
+#define LOG(x) std:: cout << x << "\n"
 
 // getters and setters are also known as facilitators
 
@@ -29,7 +29,7 @@ class Rectangle
 
     void area()
     {
-        LOG_L("Area of rectangle: " << length * breadth);
+        LOG("Area of rectangle: " << length * breadth);
     }
 
     void changeLength(int newLength) // setter or mutator
@@ -54,7 +54,7 @@ int main()
     rectObj.area();
     rectObj.changeLength(11);
     rectObj.area();
-    // LOG_L(rectObj.length); // cannot access private members, by default it is private
+    // LOG(rectObj.length); // cannot access private members, by default it is private
     // you could just replace class keyword with struct and use it, just that its data members would become public
     return 0;
 }

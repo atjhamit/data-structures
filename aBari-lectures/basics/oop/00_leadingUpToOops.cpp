@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define LOG_L(x) std:: cout << x << "\n"
+#define LOG(x) std:: cout << x << "\n"
 
 struct Rectangle
 {
@@ -16,7 +16,7 @@ void initialize(Rectangle* obj, int len, int width)
 
 void area(Rectangle* obj)
 {
-    LOG_L("Area of rectangle: " << obj-> length * obj->breadth);
+    LOG("Area of rectangle: " << obj-> length * obj->breadth);
 }
 
 void changeLength(Rectangle* obj, int newLength)

@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x)      std::cout << x << "\t"
-#define LOG_L(x)    std::cout << x << "\n"
+#define LOG_T(x)      std::cout << x << "\t"
+#define LOG(x)    std::cout << x << "\n"
 
 int powSlow(int m, int n)
 {
@@ -37,8 +37,8 @@ int main()
     int m = 2;
     int n = 9;
 
-    LOG_L("Ans : " << powSlow(m, n));
-    LOG_L("Ans : " << powFast(m, n));
+    LOG("Ans : " << powSlow(m, n));
+    LOG("Ans : " << powFast(m, n));
 
     return 0;
 }

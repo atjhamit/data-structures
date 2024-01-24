@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x)      std::cout << x << "\t"
-#define LOG_L(x)    std::cout << x << "\n"
+#define LOG_T(x)      std::cout << x << "\t"
+#define LOG(x)    std::cout << x << "\n"
 
 int nCr(int n, int r)
 {
@@ -14,11 +14,11 @@ int nCr(int n, int r)
 
 int main()
 {
-    LOG_L("Enter n and r");
+    LOG("Enter n and r");
     int n, r;
     std::cin >> n >> r;
 
-    LOG_L(n << "C" << r << ": " << nCr(n, r));
+    LOG(n << "C" << r << ": " << nCr(n, r));
 
     return 0;
 }

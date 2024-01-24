@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x)      std::cout << x << "\t"
-#define LOG_L(x)    std::cout << x << "\n"
+#define LOG_T(x)      std::cout << x << "\t"
+#define LOG(x)    std::cout << x << "\n"
 
 void funcB(int);
 
@@ -9,7 +9,7 @@ void funcA(int n)
 {
     if(n > 0)
     {
-        LOG_L(n);
+        LOG(n);
         funcB(n - 1);
     }
 }
@@ -18,7 +18,7 @@ void funcB(int n)
 {
     if(n > 1)
     {
-        LOG_L(n);
+        LOG(n);
         funcA(n / 2);
     }
 }

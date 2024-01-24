@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x)      std::cout << x << "\t"
-#define LOG_L(x)    std::cout << x << "\n"
+#define LOG_T(x)      std::cout << x << "\t"
+#define LOG(x)    std::cout << x << "\n"
 
 double facto(double n)
 {
@@ -83,10 +83,10 @@ int main()
     double x = 4;
     double n = 15;
 
-    LOG_L("Taylor series Self: \t" << taylorSeriesSelf(x, n));
-    LOG_L("Taylor series Optimized: \t" << taylorSeriesOptimized(x, n));
-    LOG_L("Honer's rule iterative:\t " << hornerLoop(x, n));
-    LOG_L("Horner's rule recursive: \t" << hornerRecursive(x, n));
+    LOG("Taylor series Self: \t" << taylorSeriesSelf(x, n));
+    LOG("Taylor series Optimized: \t" << taylorSeriesOptimized(x, n));
+    LOG("Honer's rule iterative:\t " << hornerLoop(x, n));
+    LOG("Horner's rule recursive: \t" << hornerRecursive(x, n));
 
     return 0;
 }

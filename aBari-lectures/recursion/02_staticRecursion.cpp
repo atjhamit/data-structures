@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x)      std::cout << x << "\t"
-#define LOG_L(x)    std::cout << x << "\n"
+#define LOG_T(x)      std::cout << x << "\t"
+#define LOG(x)    std::cout << x << "\n"
 
 int func(int n)
 {
@@ -17,7 +17,7 @@ int func(int n)
 int main()
 {
     int x = 5;
-    LOG_L("final value : " << func(5));
+    LOG("final value : " << func(5));
 
     return 0;
 }

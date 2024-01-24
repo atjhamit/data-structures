@@ -1,7 +1,7 @@
 #include <iostream>
 
-#define LOG(x) std::cout << x 
-#define LOG_L(x) std::cout << x << std::endl
+#define LOG_T(x) std::cout << x 
+#define LOG(x) std::cout << x << std::endl
 
 void callByValue(int val1, int val2)
 {
@@ -9,9 +9,9 @@ void callByValue(int val1, int val2)
     val1        = val2;
     val2        = temp;
 
-    LOG_L("==Call By Value==");
-    LOG_L("val1 = " << val1);
-    LOG_L("val2 = " << val2);
+    LOG("==Call By Value==");
+    LOG("val1 = " << val1);
+    LOG("val2 = " << val2);
 }
 
 void callByAddress(int* pVal1, int* pVal2)
@@ -20,7 +20,7 @@ void callByAddress(int* pVal1, int* pVal2)
     *pVal1      = *pVal2;
     *pVal2      = temp;
 
-    LOG_L("==Call By Address==");
+    LOG("==Call By Address==");
 }
 
 void callByReference(int &val1, int &val2)
@@ -29,7 +29,7 @@ void callByReference(int &val1, int &val2)
     val1        = val2;
     val2        = temp;
 
-    LOG_L("==Call By Reference==");
+    LOG("==Call By Reference==");
 }
 
 int main()
@@ -37,7 +37,7 @@ int main()
     int value1 = 3;
     int value2 = 4;
 
-    LOG_L("Original values:\nvalue1 = " << value1 << ", value2 = " << value2);
+    LOG("Original values:\nvalue1 = " << value1 << ", value2 = " << value2);
 
     callByValue(value1, value2);
 
@@ -46,14 +46,14 @@ int main()
     value2 = 4;
 
     callByAddress(&value1, &value2);
-    LOG_L("value1 = " << value1 << ", value2 = " << value2);
+    LOG("value1 = " << value1 << ", value2 = " << value2);
 
     // resetting to original values
     value1 = 3;
     value2 = 4;
 
     callByReference(value1, value2);
-    LOG_L("value1 = " << value1 << ", value2 = " << value2);
+    LOG("value1 = " << value1 << ", value2 = " << value2);
 
     return 0;
 }
