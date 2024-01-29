@@ -12,7 +12,7 @@ class Solution
                                             int target, vector<int> temp,
                                             vector<vector<int>>& result)
     {
-        if(target <= 0)
+        if(index == candidates.size())
         {
             if(target == 0)
             {
@@ -20,14 +20,13 @@ class Solution
             }
             return result;
         }
-        if(index == candidates.size())
-        {
-            return result;
-        }
 
-        temp.push_back(candidates[index]);
-        getCombinationSum(index, candidates, target - candidates[index], temp, result);
-        temp.pop_back();
+        if((target - candidates[index]) >= 0)
+        {
+            temp.push_back(candidates[index]);
+            getCombinationSum(index, candidates, target - candidates[index], temp, result);
+            temp.pop_back();
+        }
         getCombinationSum(index + 1, candidates, target, temp, result);
         return result;
     }
