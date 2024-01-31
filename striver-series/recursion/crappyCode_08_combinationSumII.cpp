@@ -25,7 +25,7 @@ class Solution
     void removeDuplicate(std::vector<std::vector<int>>& result)
     {
         int i = 0;
-        while(i < result.size() - 1)
+        while(i < ((int)result.size() - 1))
         {
             if(result[i] == result[i + 1])
             {
@@ -52,10 +52,12 @@ public:
 
 int main()
 {
-//    std::vector<int> origArray = {10, 1, 2, 7, 6, 1, 5};
-//    int target = 8;
-    std::vector<int> origArray = {2};
-    int target = 1;
+   std::vector<int> origArray = {10, 1, 2, 7, 6, 1, 5};
+   int target = 8;
+
+    // won't work for this exponential
+    // std::vector<int> origArray = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+    // int target = 27;
 
     Solution obj;
 
